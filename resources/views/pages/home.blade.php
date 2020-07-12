@@ -1,4 +1,5 @@
-@extends('layout')// mở rộng lấy các thành phần thuộc welcome
+// mở rộng lấy các thành phần thuộc welcome
+@extends('layout')
 @section('content')//gọi file content
 <div class="features_items"><!--features_items-->
     <h2 class="title text-center">Features Items</h2>

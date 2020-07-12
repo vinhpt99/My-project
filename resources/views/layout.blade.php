@@ -352,7 +352,7 @@
 				</div>
 				
 				<div class="col-sm-9 padding-right">
-					@yield('layout')
+					@yield('content')
 				<!--/recommended_items--> <!--/category-tab--> 	<!--features_items-->
 					
 				</div>

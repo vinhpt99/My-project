@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeControler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('layout');
-});
-Route::get('/trangchu', function () {
-    return view('layout');
-    
-});
+Route::get('/', 'HomeControler@index'); 
+Route::get('/trangchu', 'HomeControler@index' );
+Route::get('/admin', 'AdminControler@index');
