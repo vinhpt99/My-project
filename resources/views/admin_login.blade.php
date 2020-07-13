@@ -30,7 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<span><input type="checkbox" />Remember Me</span>
 			<h6><a href="#">Quên mật khẩu ?</a></h6>
 				<div class="clearfix"></div>
-				<input type="submit" value="Sign In" name="login">
+				<input type="submit" value="Đăng nhập" name="login">
 		</form>
 		<p>Don't Have an Account ?<a href="registration.html">Create an account</a></p>
 </div>
@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="{{asset('public/backend/css/js/scripts.js')}}"></script>
 <script src="{{asset('public/backend/css/js/jquery.slimscroll.js')}}"></script>
 <script src="{{asset('public/backend/css/js/jquery.nicescroll.js')}}"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="{{asset('public/backend/js/flot-chart/excanvas.min.js')}}"></script><![endif]-->
 <script src="{{asset('public/backend/css/js/jquery.scrollTo.js')}}"></script>
 </body>
 </html>
