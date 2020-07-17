@@ -18,21 +18,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="{{asset('public/backend/css/font.css')}}" type="text/css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <!-- //font-awesome icons -->
-<script src="js/jquery2.0.3.min.js"></script>
+<script src="{{asset('public/backend/js/jquery2.0.3.min.js')}}"></script>
 </head>
 <body>
 <div class="log-w3">
 <div class="w3layouts-main">
 	<h2>Đăng nhập</h2>
-		<form action="#" method="post">
-			<input type="email" class="ggg" name="Email" placeholder="E-MAIL" required="">
-			<input type="password" class="ggg" name="Password" placeholder="PASSWORD" required="">
+	//action gửi thông tin đến hàm admin-dashboard
+		<form action="{{URL::to('/admin-dashboard')}}" method="post"> 
+			//thêm trường để bảo mật trong gửi thông tin
+			{{@csrf_field()}}
+			<input type="text" class="ggg" name="admin_email" placeholder="Điền email" required="">
+			<input type="password" class="ggg" name="admin_password" placeholder="Điền password" required="">
 			<span><input type="checkbox" />Remember Me</span>
 			<h6><a href="#">Quên mật khẩu ?</a></h6>
 				<div class="clearfix"></div>
 				<input type="submit" value="Đăng nhập" name="login">
 		</form>
-		<p>Don't Have an Account ?<a href="registration.html">Create an account</a></p>
+		<p>Chưa có tài khoản?<a href="registration.html">Tạo tài khoản mới</a></p>
 </div>
 </div>
 <script src="{{asset('public/backend/css/js/bootstrap.js')}}"></script>

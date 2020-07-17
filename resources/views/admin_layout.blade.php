@@ -240,7 +240,7 @@
                 <ul class="dropdown-menu extended logout">
                     <li><a href="#"><i class=" fa fa-suitcase"></i>Thông tin</a></li>
                     <li><a href="#"><i class="fa fa-cog"></i>Cài đặt</a></li>
-                    <li><a href="login.html"><i class="fa fa-key"></i>Đăng xuất</a></li>
+                    <li><a href="{{URL::to('/logout')}}"><i class="fa fa-key"></i>Đăng xuất</a></li>
                 </ul>
             </li>
             <!-- user login dropdown end -->
@@ -283,7 +283,7 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
-            <h3>Chào mừng đến với giao diện admin</h3>
+          @yield('admin_content')
         </section>
      <!-- footer -->
               <div class="footer">

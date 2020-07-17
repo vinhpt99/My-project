@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminControler;
 use App\Http\Controllers\HomeControler;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ Route::get('/trangchu', 'HomeControler@index' );
 //Backend
 Route::get('/admin', 'AdminControler@index');
 Route::get('/dashboard','AdminControler@show_dashboard');
+Route::get('/logout','AdminControler@logout');
+Route::post('/admin-dashboard', 'AdminControler@dashboard'); 
